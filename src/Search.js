@@ -1,11 +1,19 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function Search() {
   let [searchInput, setSearchInput] = useState("");
 
+  function handleResponse(response) {
+    console.log(response);
+  }
+
   function handleSearch(event) {
     event.preventDefault();
-    alert(searchInput);
+
+    const apiKey = "o65149f37004a818054t1c639bd4becf";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchInput}&key=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleInputChange(event) {
@@ -21,7 +29,7 @@ export default function Search() {
             <input
               type="search"
               className="form-control w-100"
-              placeholder="Search for a word or phrase"
+              placeholder="Search for a word..."
               autoFocus="on"
               onChange={handleInputChange}
             />
