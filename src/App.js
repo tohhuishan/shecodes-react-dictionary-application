@@ -1,10 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Search from "./Search";
 
 export default function App() {
   return (
     <div className="App">
-      <h1 className="App-header">Dictionary App</h1>
+      <div className="App-header">
+        <h1>Dictionary App</h1>
+        <div className="container">
+          <Search />
+        </div>
+      </div>
     </div>
   );
 }
