@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Meanings from "./Meanings";
 
 export default function Search() {
   let [searchInput, setSearchInput] = useState("");
+  let [results, setResults] = useState({});
 
   function handleResponse(response) {
-    console.log(response);
+    console.log(response.data);
+    setResults({
+      word: response.data.word,
+      phonetic: response.data.phonetic,
+      meanings: response.data.meanings,
+    });
   }
 
   function handleSearch(event) {
@@ -25,7 +32,7 @@ export default function Search() {
       <form className="form-control" onSubmit={handleSearch}>
         <label>What would you like to search for?</label>
         <div className="row">
-          <div className="col-9">
+          <div className="col-11">
             <input
               type="search"
               className="form-control w-100"
@@ -35,15 +42,15 @@ export default function Search() {
             />
           </div>
 
-          <div className="col-3">
-            <input
-              type="submit"
-              className="form-control w-100"
-              value="Search"
-            />
+          <div className="col-1">
+            <button className="form-control" type="submit">
+              <i className="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
           </div>
         </div>
       </form>
+
+      <Meanings results={results} />
     </div>
   );
 }
