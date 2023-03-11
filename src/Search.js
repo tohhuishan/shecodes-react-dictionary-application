@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Search.css";
 import Meanings from "./Meanings";
 
 export default function Search() {
@@ -7,7 +8,6 @@ export default function Search() {
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
     setResults({
       word: response.data.word,
       phonetic: response.data.phonetic,
@@ -29,26 +29,18 @@ export default function Search() {
 
   return (
     <div className="Search">
-      <form className="form-control" onSubmit={handleSearch}>
-        <label>What would you like to search for?</label>
-        <div className="row">
-          <div className="col-11">
-            <input
-              type="search"
-              className="form-control w-100"
-              placeholder="Search for a word..."
-              autoFocus="on"
-              onChange={handleInputChange}
-            />
-          </div>
-
-          <div className="col-1">
-            <button className="form-control" type="submit">
-              <i className="fa-solid fa-magnifying-glass search-icon"></i>
-            </button>
-          </div>
-        </div>
-      </form>
+      <div className="search-engine">
+        <form className="form-control" onSubmit={handleSearch}>
+          <label>What word do you want to look up?</label>
+          <input
+            type="search"
+            className="form-control w-100"
+            placeholder="Search for a word..."
+            autoFocus="on"
+            onChange={handleInputChange}
+          />
+        </form>
+      </div>
 
       <Meanings results={results} />
     </div>

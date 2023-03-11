@@ -1,0 +1,20 @@
+.Search .search-engine form {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px 30px;
+}
+
+.Search .search-engine form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Search .search-engine form button {
+  background: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  right: 10px;
+}

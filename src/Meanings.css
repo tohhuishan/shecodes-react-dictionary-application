@@ -1,0 +1,56 @@
+.Meanings section {
+  background: #fff;
+  border-radius: 6px;
+  margin: 20px auto;
+  padding: 20px 30px;
+}
+
+.Meanings .word {
+  color: #000;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.Meanings .phonetic {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.Meanings h3 {
+  font-weight: 600;
+}
+
+.Meanings h3.part-of-speech {
+  font-size: 20px;
+}
+
+.Meanings h3.sub-header {
+  font-size: 18px;
+}
+
+.Meanings .definition,
+.Meanings .example,
+.Meanings .synonyms,
+.Meanings .antonyms {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.Meanings .definition,
+.Meanings .example {
+  margin-bottom: 0;
+}
+
+.Meanings .Synonyms,
+.Meanings .Antonyms {
+  margin-top: 20px;
+}
+
+.Meanings .synonyms,
+.Meanings .antonyms {
+  margin-bottom: 0;
+}
+
+.Meanings span {
+  margin-right: 14px;
+}
