@@ -4,7 +4,7 @@ import Meanings from "./Meanings";
 
 export default function Search() {
   let [searchInput, setSearchInput] = useState("");
-  let [results, setResults] = useState({});
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data);
