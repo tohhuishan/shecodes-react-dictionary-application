@@ -14,6 +14,7 @@ export default function App() {
         on{" "}
         <a
           href="https://github.com/tohhuishan/shecodes-react-dictionary-application"
+          target="_blank"
           rel="noreferrer"
         >
           GitHub
