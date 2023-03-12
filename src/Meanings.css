@@ -1,7 +1,12 @@
+.Meanings {
+  line-height: 1.5;
+}
+
 .Meanings section {
   background: #fff;
   border-radius: 6px;
   margin: 20px auto;
+  max-width: 800px;
   padding: 20px 30px;
 }
 

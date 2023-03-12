@@ -4,6 +4,7 @@
     rgb(252, 115, 156) 0%,
     rgb(102, 167, 241) 86%
   );
+  background-size: cover;
   padding: 50px;
 }
 

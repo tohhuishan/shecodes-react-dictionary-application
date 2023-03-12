@@ -1,6 +1,7 @@
 .Search .search-engine form {
   background: #fff;
   margin: 20px auto;
+  max-width: 800px;
   padding: 20px 30px;
 }
 
