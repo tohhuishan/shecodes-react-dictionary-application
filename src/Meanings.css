@@ -59,3 +59,34 @@
 .Meanings span {
   margin-right: 14px;
 }
+
+@media (max-width: 768px) {
+  .Meanings .word {
+    font-size: 28px;
+  }
+
+  .Meanings h3.part-of-speech {
+    font-size: 16px;
+  }
+
+  .Meanings h3.sub-header {
+    font-size: 14px;
+  }
+
+  .Meanings .definition,
+  .Meanings .example,
+  .Meanings .synonyms,
+  .Meanings .antonyms {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Meanings .word {
+    font-size: 24px;
+  }
+
+  .Meaning section {
+    padding: 14px 20px;
+  }
+}

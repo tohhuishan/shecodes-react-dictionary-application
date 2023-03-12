@@ -58,6 +58,8 @@ export default function Search(props) {
               className="form-control w-100"
               placeholder="Search for a word..."
               autoFocus="on"
+              autoComplete="off"
+              defaultValue="dictionary"
               onChange={handleInputChange}
             />
           </form>
