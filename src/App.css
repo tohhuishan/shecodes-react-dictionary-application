@@ -16,6 +16,14 @@
   text-align: center;
 }
 
+.App footer {
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
 @media (max-width: 400px) {
   .App {
     padding: 18px;
