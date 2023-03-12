@@ -21,7 +21,6 @@ export default function Search(props) {
 
   function handlePhotoResponse(response) {
     setPhotos(response.data.photos);
-    console.log(response.data);
   }
 
   function search() {
@@ -65,7 +64,7 @@ export default function Search(props) {
         </div>
 
         <Meanings results={results} />
-        <Photos photos={photos} alt={results.word} />
+        <Photos photos={photos} />
       </div>
     );
   } else {

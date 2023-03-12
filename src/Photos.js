@@ -10,7 +10,7 @@ export default function Photos(props) {
             <div className="photo col-md-4" key={index}>
               <img
                 src={photo.src.landscape}
-                alt={props.alt}
+                alt={photo.alt}
                 className="img-fluid rounded mt-2 mb-2"
               />
             </div>
